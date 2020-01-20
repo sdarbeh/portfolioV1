@@ -1,0 +1,92 @@
+#portfolio {
+  margin: 125px 0 125px 0;
+  // start of projects
+  .projects {
+    margin: 0 auto;
+    width: 90%;
+    padding: 100px 0 50px 0;
+    position: relative;
+    .portfolio-title {
+      position: absolute;
+      top: 50px;
+      left: 3%;
+    }
+    .project {
+      width: 100%;
+      min-height: 550px;
+      max-height: 550px;
+      @include flex-center;
+      position: relative;
+    }
+    .project-title {
+      margin: 0 0 20px 0;
+    }
+    .project-un {
+      border-radius: 0 20px 0 0;
+    }
+    .project-wrapper {
+      @include flex-center;
+      flex-direction: column;
+      width: 80%;
+      max-width: 450px;
+      .project-image {
+        width: 50px;
+        height: 50px;
+      }
+      .divider {
+        width: 20%;
+        max-width: 40px;
+        height: 3px;
+        margin: 20px 0;
+      }
+      .lang-used {
+          li {
+            display: inline;
+            margin: 0 10px;
+          }
+      }
+    }
+    .project-links {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      .project-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  //end of projects
+  .see-more {
+    margin: 25px auto 0 auto;
+    width: 75%;
+    max-width: 400px;
+  }
+  //  ------ Media Queries -------  //
+  @include mq("m") {
+    .project {
+      max-height: 450px!important;
+      min-height: 450px!important;
+    }
+  }
+  @include mq("l") {
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      @include max-width;
+    }
+    .project-un {
+      width: 100% !important;
+    }
+    .project-deux, .project-trois, .project-quatre, .project-cinq {
+      width: 50% !important;
+    }
+    .see-more-button {
+      margin: 25px auto 0 auto;
+    }
+  }
+}
+.is-active {
+  display: unset!important;
+}

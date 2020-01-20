@@ -1,0 +1,119 @@
+// fixed
+.fixed-icon, .vl-right a {
+  transition: .3s;
+}
+.fixed-icon-link:hover {
+  .fixed-icon {
+    fill: $color-theme1 !important;
+    transform: scale(1.3);
+  }
+}
+.vl-right {
+  a:hover {
+    color: $color-theme1 !important;
+    transform: scale(1.1);
+  }
+}
+//header
+// JS hide/show on scroll
+header {
+  transition: .5s;
+}
+.glogo:hover {
+  @include mq("l") {
+    .logo {
+      fill: lighten($color-theme1, 10);
+    }
+    .oodridge {
+      top: -10px!important;
+    }
+  }
+}
+
+nav, .oodridge {
+  transition: .5s ease;
+}
+nav {
+  a:hover {
+    color: $color-light;
+    fill: $color-light;
+  }
+  @include mq("l") {
+    a:hover {
+      color: $color-theme1;
+    }
+    .head-resume:hover {
+      border-color: lighten($color-theme1, 10);
+      color: lighten($color-theme1, 10);
+    }
+  }
+}
+//intro
+.intro-continue {
+  transform: translateX(-50%);
+  animation: fadein 1s ease-in alternate infinite;
+}
+//resume
+.resume-button {
+  span {
+    animation: fadein 5s ease-in alternate infinite;
+  }
+}
+//portfolio
+.divider, .project-title {
+  transition: .2s;
+}
+.image, .project-links, .see-more a {
+  transition: .5s;
+}
+.project:hover {
+  .project-wrapper {
+    .project-title {
+      margin: 0 0 33px 0 !important;
+    }
+  }
+  .divider {
+    max-width: 50px!important;
+  }
+  .image {
+    transform: rotate(2deg);
+  }
+  .project-links {
+    right: 25px!important;
+  }
+}
+.see-more {
+  a:hover {
+    color: lighten($color-theme1, 10) !important;
+    text-decoration: underline;
+  }
+}
+
+//scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-light;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-theme1;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($color-theme1, 30);
+}
+
+//highlighted text
+::selection {
+  background: lighten($color-theme1, 10); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lighten($color-theme1, 10); /* Gecko Browsers */
+}
+
+//animation
+@keyframes fadein { 0% {opacity: .3} 100%, 90% {opacity: 1} }

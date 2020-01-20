@@ -1,0 +1,100 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  .glogo {
+    width: 40px;
+    height: 40px;
+    left: 15px;
+    .logo {
+      width: 100%;
+      height: 100%;
+      stroke-dasharray: 11700;
+      stroke-dashoffset: 11700;
+
+    }
+    .oodridge {
+      display: none;
+    }
+  }
+  .glogo, .burger {
+    position: absolute;
+    top: 15px;
+  }
+  .burger {
+    right: 0;
+    padding: 15px;
+    z-index: 2;
+  }
+  nav {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5% 0 0 0;
+      z-index: 1;
+      width: 0;
+      height: calc(100vh - 5%);
+      text-align: center;
+    li, .nav-icons {
+      margin: 40px auto 20px auto;
+      width: min-content;
+      text-align: center;
+    }
+    hr {
+      width: 60%;
+      max-width: 100px;
+      margin: 0 auto;
+    }
+    .nav-icons {
+      display: block;
+      .nav-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  @include mq("l") {
+    .burger, hr, .nav-social {
+      display: none;
+    }
+    .glogo {
+      top: 20px;
+      left: 60px;
+      .oodridge {
+        position: absolute;
+        top: -400px;
+        left: 45px;
+        z-index: 1;
+        @include flex-center;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 30px;
+      right: 60px;
+      padding: unset;
+      width: unset;
+      height: unset;
+      min-height: unset;
+      margin: 0 0 0 auto;
+    }
+    li {
+      display: inline;
+      margin: 0 0 0 40px!important;
+    }
+    .head-resume {
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-right: unset;
+    }
+  }
+}
+.menu-expanded {
+  width: 60%;
+  touch-action: none;
+}

@@ -1,0 +1,44 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-title {
+  color: $color-dark;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+  z-index: 1;
+  @include mq("m") {
+    font-size: 3.5rem;
+  }
+}
+
+@mixin max-width {
+  width: 75% !important;
+  max-width: 1000px;
+}
+
+@mixin button-with-svg {
+  @include flex-center;
+  width: max-content;
+  max-width: 280px;
+  border-radius: 5px;
+}
+
+// Media queries
+@mixin  mq($break) {
+  $value: map-get($breakpoints, $break);
+  $sm: map_get($breakpoints, "xs");
+
+  @if $value < $sm {
+    @media (min-width: $value) {
+      @content;
+    }}
+  @else  {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

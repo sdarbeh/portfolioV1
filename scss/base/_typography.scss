@@ -1,0 +1,283 @@
+//body
+body {
+  font-family: $font-primary;
+  background: linear-gradient($color-dark, transparent 0%),
+  linear-gradient(0deg, $color-light, transparent 80%),
+  $color-dark;
+  line-height: 1.5;
+    a {
+      text-decoration: none;
+      color: unset;
+    }
+    .overlay {
+      .oodridge {
+        font-size: 2rem;
+        color: $color-theme1;
+        .io {
+          letter-spacing: 3px;
+        }
+      }
+    }
+  .js-disabled {
+    background-color: $color-js;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  @include mq("s") {
+      .overlay {
+        .oodridge {
+          font-size: 2.5rem;
+        }
+      }
+  }
+  @include mq("l") {
+    background: linear-gradient($color-dark, transparent 0%),
+    linear-gradient(0deg, $color-light, transparent 65%),
+    #272727;
+      .vl {
+        color: $color-medium;
+      }
+      .vl:after {
+        background-color: $color-medium;
+      }
+      .fixed-icon {
+        fill: $color-medium;
+      }
+      .vl-right {
+        a {
+          writing-mode: vertical-rl;
+          letter-spacing: 1px;
+          font-weight: bold;
+          font-size: .8rem;
+        }
+      }
+  }
+  @include mq("xl") {
+    background: linear-gradient($color-dark, transparent 0%),
+    linear-gradient(0deg, $color-light, transparent 70%),
+    #272727;
+  }
+}
+//header
+header {
+  .logo {
+    fill: $color-theme1;
+    //stroke: $color-theme1;
+  }
+  .oodridge {
+    font-size: 1.5rem;
+    color: lighten($color-theme1, 10);
+  }
+}
+nav {
+  color: $color-medium;
+  background-color: darken($color-theme1, 15);
+  .nav-icons {
+    fill: $color-medium
+  }
+  @include mq("l") {
+    background-color: unset;
+    .head-resume {
+      border: 2px $color-theme1 solid;
+      color: $color-theme1;
+    }
+  }
+}
+.overlay-active {
+  background-color: $color-dark;
+  opacity: .97;
+  display: unset!important;
+}
+#intro {
+    .intro-content {
+      max-width: 600px;
+    }
+    h1 {
+      color: $color-light;
+      font-size: 10vw;
+    }
+    .intro-hello {
+      color: $color-theme1;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .job-title, .intro-continue  {
+      color: $color-medium;
+    }
+    .intro-continue {
+      font-size: 3.5rem;
+    }
+  @include mq("s") {
+    h1 {
+      font-size: 7vw;
+    }
+  }
+  @include mq("l") {
+    h1 {
+      font-size: 3.5rem!important;
+    }
+  }
+  @include mq("l") {
+    h1 {
+      font-size: 2.5rem!important;
+    }
+  }
+}
+//about
+.about {
+  border-bottom: 5px $color-theme1 solid;
+  color: $color-light;
+  text-align: center;
+  position: relative;
+  .about-greeting {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+//resume
+.resume {
+  text-align: center;
+  color: $color-light;
+  .resume-button {
+    border: 2px $color-light solid;
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
+//portfolio
+#portfolio {
+  text-align: center;
+    .portfolio-title {
+      @include section-title;
+    }
+    .portfolio-description {
+      font-size: 1.2rem;
+      a {
+        color: $color-theme1;
+        font-weight: bold;
+      }
+    }
+    .project {
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    .project-title {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+    .lang-used {
+      font-size: .7rem;
+      font-weight: bold;
+    }
+    .project-un {
+      background-image: linear-gradient(to right, $color-theme2, lighten($color-theme2, 15));
+      color: $color-dark;
+      .project-image, .project-icon {
+        fill: $color-dark;
+      }
+      .divider {
+        background-color: $color-dark;
+      }
+    }
+    .project-deux {
+      background-image: linear-gradient(to right, $color-dark, lighten($color-dark, 5));
+      color: $color-medium;
+        .project-image, .project-icon {
+          fill: $color-medium;
+        }
+        .divider {
+          background-color: $color-medium;
+        }
+    }
+    .project-trois {
+      background-image: linear-gradient(to right, darken($color-theme7, 10), $color-theme7);
+      color: $color-dark;
+      .project-image, .project-icon {
+        fill: $color-dark;
+      }
+      .divider {
+        background-color: $color-dark;
+      }
+    }
+    .project-quatre {
+      background-image: linear-gradient(to right, $color-theme3, lighten($color-theme3, 15));
+      color: $color-dark;
+      .project-image, .project-icon {
+        fill: $color-dark;
+      }
+      .divider {
+        background-color: $color-dark;
+      }
+    }
+    .project-cinq{
+      background-image: linear-gradient(to right, $color-theme4, lighten($color-theme4, 10));
+      color: $color-medium;
+      .project-image, .project-icon {
+        fill: $color-medium;
+      }
+        .divider {
+          background-color: $color-medium;
+        }
+
+    }
+    .see-more {
+      a {
+        color: $color-theme1;
+      }
+    }
+  @include mq("m") {
+    .project-trois {
+      background-position: right !important;
+    }
+  }
+  @include mq("l") {
+      .project {
+        box-shadow: unset;
+      }
+  }
+}
+//contact
+#contact {
+  .contact {
+    color: $color-light;
+    background-image: linear-gradient( $color-theme6, black);
+  }
+  .contact-title {
+    @include section-title;
+  }
+  .contact-email {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .contact-icon {
+    fill: $color-light;
+  }
+  .contact-image {
+    background-image: url("../media/sam.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @include mq("s") {
+    .contact-image {
+      background-position: center;
+    }
+  }
+  @include mq("m") {
+    .contact {
+      background-image: linear-gradient(to right, $color-theme6, black);
+    }
+  }
+}
+//footer
+footer {
+  color: $color-medium;
+  .copyright {
+    font-size: .8rem;
+  }
+  .foot-icon {
+    fill: $color-medium;
+  }
+}

@@ -1,0 +1,15 @@
+//footer
+footer {
+  @include flex-center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  height: 80px;
+  max-height: 80px;
+  a {
+    margin: 0 0 0 5px;
+  }
+  @include mq("l") {
+    @include max-width;
+  }
+ }

@@ -1,0 +1,79 @@
+body {
+  min-width: 350px;
+  .vl {
+    display: none;
+  }
+  .js-disabled {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+  }
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    touch-action: none;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .oodridge {
+      position: absolute;
+      top: 35px;
+      left: 25px;
+      z-index: 1;
+      @include flex-center;
+      flex-direction: column;
+    }
+    .io {
+      position: absolute;
+      bottom: 0;
+      right: -50px;
+    }
+  }
+  @include mq("s") {
+    .overlay {
+      .oodridge {
+        top: 30px;
+        left: 20px;
+      }
+      .io {
+        right: -65px;
+      }
+    }
+  }
+  @include mq("l") {
+    .vl {
+      display: unset;
+      position: fixed;
+      bottom: 0;
+    }
+    .vl:after {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 80px;
+      margin: 0 auto;
+    }
+    .vl-left {
+      left: 60px;
+      .fixed-icon-link {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+      }
+    }
+    .vl-right {
+      right: 60px;
+      a {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}

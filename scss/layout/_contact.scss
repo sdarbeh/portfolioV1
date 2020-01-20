@@ -1,0 +1,90 @@
+#contact {
+  width: 90%;
+  margin: 300px auto 0 auto;
+  border-radius: 0 20px 20px 20px;
+    .contact-title {
+      position: absolute;
+      top: -50px;
+      left: 3%;
+    }
+    .contact {
+      padding: 100px 0 50px;
+      position: relative;
+    }
+    .contact-email, p, .my-info {
+      width: 65%;
+      max-width: 205px;
+    }
+    .contact-email {
+      margin: 10px 0 40px 0;
+    }
+    .contact-wrapper {
+      padding: 0 0 0 25px;
+    }
+    hr {
+      width: 20%;
+      margin: 0 auto 0 0;
+    }
+    .my-info {
+      margin: 20px 0 40px 0;
+      h1, p {
+        margin: 0;
+      }
+    }
+    .contact-social-icons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      max-width: 150px;
+        .contact-icon {
+          width: 22px;
+          height: 22px;
+        }
+    }
+  .contact-image {
+    height: 30vh;
+    margin: 0 auto;
+  }
+  //  ------ Media Queries -------  //
+  @include mq("s") {
+    .contact-email, p, .my-info {
+      max-width: 300px;
+    }
+  }
+  @include mq("m") {
+    padding: 0;
+    border-radius: 0 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+      .contact-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .contact-email, p, .my-info {
+        max-width: 350px;
+      }
+      .contact-image {
+        height: unset;
+        border-radius: 0 20px 0 0;
+      }
+      .contact {
+        padding: 50px 0;
+      }
+      .contact, .contact-image {
+        width: 50%;
+        min-height: calc( 45vh - 100px );
+      }
+  }
+  @include mq("l") {
+    @include max-width;
+    .mail-link, .contact-email, p, .my-info {
+      max-width: max-content;
+    }
+    .contact-social-icons {
+      display: none;
+    }
+  }
+}

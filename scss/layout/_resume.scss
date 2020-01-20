@@ -1,0 +1,27 @@
+#resume {
+  margin-bottom: 100px;
+  .resume {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  .resume-button {
+    @include button-with-svg;
+    margin: 25px auto;
+    padding: 5px 25px;
+  }
+  //  ------ Media Queries -------  //
+  @include mq("m") {
+    a {
+      margin: 25px auto 50px auto!important;
+    }
+  }
+  @include mq("l") {
+    .resume {
+      @include max-width;
+    }
+    a {
+      margin: 25px auto 75px auto!important;
+    }
+  }
+}
