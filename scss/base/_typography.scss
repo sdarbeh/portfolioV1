@@ -170,7 +170,7 @@ nav {
       font-weight: bold;
     }
     .project-un {
-      background-image: linear-gradient(to right, $color-theme2, lighten($color-theme2, 15));
+      background-image: linear-gradient(to right, $color-theme3, lighten($color-theme3, 15));
       color: $color-dark;
       .project-image, .project-icon {
         fill: $color-dark;
@@ -190,7 +190,7 @@ nav {
         }
     }
     .project-trois {
-      background-image: linear-gradient(to right, darken($color-theme7, 10), $color-theme7);
+      background-image: linear-gradient(to right, darken($color-theme2, 10), lighten($color-theme2, 15));
       color: $color-dark;
       .project-image, .project-icon {
         fill: $color-dark;
@@ -200,7 +200,7 @@ nav {
       }
     }
     .project-quatre {
-      background-image: linear-gradient(to right, $color-theme3, lighten($color-theme3, 15));
+      background-image: linear-gradient(to right, darken($color-theme7, 20), darken($color-theme7, 10));
       color: $color-dark;
       .project-image, .project-icon {
         fill: $color-dark;

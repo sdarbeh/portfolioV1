@@ -272,7 +272,7 @@ nav {
     font-size: .7rem;
     font-weight: bold; }
   #portfolio .project-un {
-    background-image: linear-gradient(to right, #6a8a82, #94ada6);
+    background-image: linear-gradient(to right, #4d4b72, #6e6c9e);
     color: #282726; }
     #portfolio .project-un .project-image, #portfolio .project-un .project-icon {
       fill: #282726; }
@@ -286,14 +286,14 @@ nav {
     #portfolio .project-deux .divider {
       background-color: #8E8E8E; }
   #portfolio .project-trois {
-    background-image: linear-gradient(to right, #d9c4c4, #EDE3E3);
+    background-image: linear-gradient(to right, #546d67, #94ada6);
     color: #282726; }
     #portfolio .project-trois .project-image, #portfolio .project-trois .project-icon {
       fill: #282726; }
     #portfolio .project-trois .divider {
       background-color: #282726; }
   #portfolio .project-quatre {
-    background-image: linear-gradient(to right, #4d4b72, #6e6c9e);
+    background-image: linear-gradient(to right, #c5a5a5, #d9c4c4);
     color: #282726; }
     #portfolio .project-quatre .project-image, #portfolio .project-quatre .project-icon {
       fill: #282726; }
@@ -720,8 +720,8 @@ header {
   margin-top: 100px; }
   #about .about {
     width: 90%;
-    margin: 0 auto;
-    padding: 100px 0 50px 0; }
+    margin: 50px auto 0 auto;
+    padding: 50px 0; }
     #about .about .about-greeting {
       margin: 20px auto; }
     #about .about .about-me {
@@ -834,7 +834,8 @@ header {
 
 #contact {
   width: 90%;
-  margin: 300px auto 0 auto;
+  margin: 165px auto 0 auto;
+  padding: 135px 0 0 0;
   border-radius: 0 20px 20px 20px; }
   #contact .contact-title {
     position: absolute;
@@ -861,7 +862,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 50%;
     max-width: 150px; }
     #contact .contact-social-icons .contact-icon {
       width: 22px;
