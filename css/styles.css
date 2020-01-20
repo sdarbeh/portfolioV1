@@ -306,6 +306,29 @@ nav {
       fill: #8E8E8E; }
     #portfolio .project-cinq .divider {
       background-color: #8E8E8E; }
+  #portfolio .project-six {
+    background-image: linear-gradient(to right, #061a1e, #6a8a82);
+    color: #8E8E8E; }
+    #portfolio .project-six .project-title {
+      color: #F2F2F2; }
+      #portfolio .project-six .project-title span {
+        color: #ffe675; }
+    #portfolio .project-six .circle-logo .logo-top-left-color {
+      fill: #186572; }
+    #portfolio .project-six .circle-logo .logo-top-left-shade {
+      fill: #020809; }
+    #portfolio .project-six .circle-logo .logo-top-right-color {
+      fill: #6a8a82; }
+    #portfolio .project-six .circle-logo .logo-top-right-shade {
+      fill: #33423e; }
+    #portfolio .project-six .circle-logo .logo-bottom-right-color {
+      fill: #ffe675; }
+    #portfolio .project-six .circle-logo .logo-bottom-right-shade {
+      fill: #f5c800; }
+    #portfolio .project-six .circle-logo .logo-bottom-left-color {
+      fill: #ff6e88; }
+    #portfolio .project-six .circle-logo .logo-bottom-left-shade {
+      fill: #ee002b; }
   #portfolio .see-more a {
     color: #0E577B; }
   @media (min-width: 768px) {
@@ -799,7 +822,7 @@ header {
       flex-wrap: wrap;
       width: 75% !important;
       max-width: 1000px; }
-    #portfolio .project-un {
+    #portfolio .project-un, #portfolio .project-six {
       width: 100% !important; }
     #portfolio .project-deux, #portfolio .project-trois, #portfolio .project-quatre, #portfolio .project-cinq {
       width: 50% !important; }

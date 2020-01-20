@@ -218,7 +218,42 @@ nav {
         .divider {
           background-color: $color-medium;
         }
-
+    }
+    .project-six {
+      background-image: linear-gradient(to right, darken($color-theme8, 20), $color-theme9);
+      color: $color-medium;
+      .project-title {
+        color: $color-light;
+        span {
+          color: $color-theme10;
+        }
+      }
+      .circle-logo {
+        .logo-top-left-color {
+          fill: $color-theme8;
+        }
+        .logo-top-left-shade {
+          fill: darken($color-theme8, 25);
+        }
+        .logo-top-right-color {
+          fill: $color-theme9;
+        }
+        .logo-top-right-shade {
+          fill: darken($color-theme9, 25);
+        }
+        .logo-bottom-right-color {
+          fill: $color-theme10;
+        }
+        .logo-bottom-right-shade {
+          fill: darken($color-theme10, 25);
+        }
+        .logo-bottom-left-color {
+          fill: $color-theme11;
+        }
+        .logo-bottom-left-shade {
+          fill: darken($color-theme11, 25);
+        }
+      }
     }
     .see-more {
       a {
