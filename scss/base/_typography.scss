@@ -209,14 +209,14 @@ nav {
         background-color: $color-dark;
       }
     }
-    .project-cinq{
+    .project-cinq {
       background-image: linear-gradient(to right, $color-theme4, lighten($color-theme4, 10));
-      color: $color-medium;
+      color: $color-dark;
       .project-image, .project-icon {
-        fill: $color-medium;
+        fill: $color-dark;
       }
         .divider {
-          background-color: $color-medium;
+          background-color: $color-dark;
         }
     }
     .project-six {
