@@ -210,7 +210,7 @@ nav {
       }
     }
     .project-cinq {
-      background-image: linear-gradient(to right, $color-theme4, lighten($color-theme4, 10));
+      background-image: linear-gradient(to right, darken($color-theme4, 20), darken($color-theme4, 5));
       color: $color-dark;
       .project-image, .project-icon {
         fill: $color-dark;
