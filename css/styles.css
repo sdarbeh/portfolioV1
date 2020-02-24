@@ -266,7 +266,7 @@ nav {
   #portfolio .project {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.19); }
   #portfolio .project-title {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.5rem; }
   #portfolio .lang-used {
     font-size: .7rem;
@@ -293,12 +293,12 @@ nav {
     #portfolio .project-trois .divider {
       background-color: #282726; }
   #portfolio .project-quatre {
-    background-image: linear-gradient(to right, #c5a5a5, #d9c4c4);
-    color: #282726; }
+    background-image: linear-gradient(to right, #091726, #132F4F);
+    color: #8E8E8E; }
     #portfolio .project-quatre .project-image, #portfolio .project-quatre .project-icon {
-      fill: #282726; }
+      fill: #8E8E8E; }
     #portfolio .project-quatre .divider {
-      background-color: #282726; }
+      background-color: #8E8E8E; }
   #portfolio .project-cinq {
     background-image: linear-gradient(to right, #2d682f, #449d48);
     color: #282726; }

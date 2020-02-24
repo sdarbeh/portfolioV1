@@ -65,7 +65,7 @@ function disableScroll() {
     scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
     scrollLeft =
-        window.pageXOffset || document.documentElement.scrollLeft,
+        window.pageXOffset || document.documentElement.scrollLeft;
 
         // if any scroll is attempted,
         // set this to the previous value

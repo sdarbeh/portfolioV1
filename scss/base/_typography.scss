@@ -162,7 +162,7 @@ nav {
       box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.19);
     }
     .project-title {
-      font-weight: normal;
+      font-weight: bold;
       font-size: 1.5rem;
     }
     .lang-used {
@@ -200,13 +200,13 @@ nav {
       }
     }
     .project-quatre {
-      background-image: linear-gradient(to right, darken($color-theme7, 20), darken($color-theme7, 10));
-      color: $color-dark;
+      background-image: linear-gradient(to right, darken($color-theme7, 10), $color-theme7);
+      color: $color-medium;
       .project-image, .project-icon {
-        fill: $color-dark;
+        fill: $color-medium;
       }
       .divider {
-        background-color: $color-dark;
+        background-color: $color-medium;
       }
     }
     .project-cinq {
